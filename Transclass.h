@@ -4,6 +4,13 @@
 
 #ifndef DLLTEST_TRANSCLASS_H
 #define DLLTEST_TRANSCLASS_H
+
+#ifdef __DLL_API
+#define DLL_API __declspec(dllexport)
+#else
+#define DLL_API __declspec(dllimport)
+#endif
+
 #include <iostream>
 class TransClass{
 

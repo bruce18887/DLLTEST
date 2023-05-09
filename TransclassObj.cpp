@@ -5,7 +5,7 @@
 #include "TransclassObj.h"
 #include "TransclassSource.h"
 
-TransClass *TransclassCreateObj::CreateObj() const {
+TransClass *TransclassCreateObj::CreateObj() {
     return new TransclassSource;
 }
 void TransclassCreateObj::DestoryObj(TransClass* InputObjPointer) {

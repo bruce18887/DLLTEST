@@ -8,8 +8,7 @@
 using namespace std;
 int main()
 {
-    TransclassCreateObj testObj;
-    auto funpointer = testObj.CreateObj();
+    auto funpointer = TransclassCreateObj::CreateObj();
     string mytest;
     int enternum;
     cout<<"Please enter a transnum: "<<endl;
@@ -21,7 +20,7 @@ int main()
     cin>>enterchar;
     mytest = funpointer->HexToBin(enterchar);
     cout<<mytest<<endl;
-    testObj.DestoryObj(funpointer);
+    TransclassCreateObj::DestoryObj(funpointer);
     std::system("pause");
     return 0;
 }

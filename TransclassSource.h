@@ -5,12 +5,6 @@
 #ifndef DLLTEST_TRANSCLASSSOURCE_H
 #define DLLTEST_TRANSCLASSSOURCE_H
 
-#ifdef DLL_API
-#define DLL_API __declspec(export)
-#else
-#define DLL_API __declspec(import)
-#endif
-
 #include "Transclass.h"
 
 class DLL_API TransclassSource:public TransClass{
